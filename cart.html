@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <!-- <link href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cart.js"> async</script>
     <title>cart</title>
 </head>
 <body>
+    <nav>
+        
+        <a class="nav" href="index.html"><img src="images/makerslogo.png" width="150" height="80"></a>|
+        <a class="nav2" href="packages.html">Packages</a>
+        <a class="nav1" href="join.html">Join Now!</a> |
+        <a class="nav3" href="login.html">Log In</a> |
+        <a class="nav4" href="cart.html">Cart</a>
+        
+        
+    </nav>
+
+    <form name="ShoppingList">
+        <fieldset>
+            <legend>Shopping cart</legend>
+            <label>Item: <input type="text" name="name"></label>
+            <label>Quantity: <input type="text" name="data"></label>
     
-    <div class=”Cart-Container”></div>
+            <input type="button" value="Save"   onclick="SaveItem()">
+            <input type="button" value="Update" onclick="ModifyItem()">
+            <input type="button" value="Delete" onclick="RemoveItem()">
+        </fieldset>
+        <div id="items_table">
+            <h2>Shopping List</h2>
+            <table id="list"></table>
+            <label><input type="button" value="Clear" onclick="ClearAll()">
+            * Delete all items</label>
+        </div>
+    </form>
+    
+    
+<!-- <div class=”Cart-Container”></div>
     <div class=”Header”>
         <h3 class=”Heading”>Shopping Cart</h3>
         <h5 class=”Action”>Remove all</h5>
@@ -20,7 +51,7 @@
             <img src="images/patron2.png" width="200" height="200" style={{ height=”120px” }} />
             </div>
             <div class=”about”>
-            <h1 class=”title”>Comfort Tequilas</h1>
+            <h3 class=”title”>Comfort Tequilas</h3>
             <h3 class=”subtitle”>4btl</h3>
             </div>
             <div class=”counter”></div>
@@ -38,6 +69,11 @@
                 <div class=”save”><u>Save for later</u></div>
                 <div class=”remove”><u>Remove</u></div>
                 </div>
-       
-</body>
+        -->
+
+            
+                <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+                
+            </body>
 </html>
