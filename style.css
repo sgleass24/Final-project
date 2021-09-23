@@ -57,3 +57,19 @@ header {
   background: #125688;
   color: white;
 }
+
+
+body {
+  background-image: url("images/agavebottombanner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  border: double 10px lightseagreen;
+  
+}
+
+.logo {
+  text-align: right bottom;
+  margin: 90%;
+}
+
